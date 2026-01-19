@@ -1,0 +1,97 @@
+
+
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.todos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background-color:darkolivegreen;
+}
+
+
+.todo {
+ 
+padding: 2rem;
+  background-color:bisque;
+  color:black;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+}
+
+/* মোবাইল স্ক্রিনের জন্য (৭৬৮ পিক্সেলের নিচে হলে) */
+@media screen and (max-width: 768px) {
+  .todos {
+    /* ২ কলামের বদলে ১ কলাম হবে */
+    grid-template-columns: 1fr; 
+  }
+
+  .todo {
+    /* মোবাইলে প্যাডিং একটু কমিয়ে দিলে দেখতে সুন্দর লাগবে */
+    padding: 1.5rem;
+  }
+}
+
+.todo-title{
+       padding:0.3rem;
+       margin:5px 10px;
+       text-align: center;
+       width: 100%;
+       font-size: larger;
+       font-weight: bolder;
+       color:black;
+       
+}
+.btn{
+    
+    margin:10px;
+    color:black;
+    text-align: center;
+    
+}
+.btn-style{
+    font-size: larger;
+    font-weight: bolder;
+}
+.btn:hover{
+    
+  
+  cursor: pointer; 
+  
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.todo-title,.btn{
+    background-color: gray;
+   
+    padding:1.5rem;
+}
+.btn-btn{
+      
+    margin:10px;
+    color:black;
+    text-align: center;
+     font-size: larger;
+    font-weight: bolder;
+}
+
+.btn-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
